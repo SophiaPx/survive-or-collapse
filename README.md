@@ -63,7 +63,7 @@ Logs and checkpoints land under `checkpoints/code_io/<project_name>/<experiment_
 
 ## Reproducing the paper
 
-### Table 1 — six self-play configurations
+### Table 1 — self-play configurations
 
 **Coding task (Python output prediction):** the cells differ only in three Hydra keys:
 `selfplay.proposer_reward_mode ∈ {grounded, intrinsic}`,
@@ -122,10 +122,18 @@ python scripts/build_codegen_val_parquet.py
 bash scripts/seeding/qwen3_4b.sh
 ```
 
-## Citation
-
-_BibTeX entry will be added once the paper is public._
-
+## 📌 Citation
+```
+@misc{pu2026survivecollapseasymmetricroles,
+      title={Survive or Collapse: The Asymmetric Roles of Data Gating and Reward Grounding in Self-Play RL}, 
+      author={Sophia Xiao Pu and Zhaotian Weng and Chengzhi Liu and Jayanth Srinivasa and Gaowen Liu and William Yang Wang and Xin Eric Wang},
+      year={2026},
+      eprint={2605.22217},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.22217}, 
+}
+```
 ## License
 
-[MIT](LICENSE). This project builds on Absolute Zero Reasoner and verl; their original licenses still apply to their respective source files.
+[MIT](LICENSE). This project builds on [Absolute Zero Reasoner](https://github.com/LeapLabTHU/Absolute-Zero-Reasoner) and [verl](https://github.com/volcengine/verl); their original licenses still apply to their respective source files.
